@@ -18,7 +18,7 @@ const InscriptionForm = () => {
     e.preventDefault();
     try {
       await axios.post(
-        `${import.meta.env.VITE_BACKEND_URL}/api/etudiants`,
+        `${import.meta.env.VITE_API_URL}/api/etudiants`,
         formData
       );
       alert("Inscription réussie !");
